@@ -1,0 +1,13 @@
+/*
+ This project is created by Loyi for demo purpose.
+ Last Updated: 2018/11/08
+ */
+
+#sessionBlock {
+  /* 控制 sessionBlock 這個 div 的顯示/消失*/
+  display: none;
+  /*
+    display: block; -> 顯示
+    display: none;  -> 消失
+  */
+}

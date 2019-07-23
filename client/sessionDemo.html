@@ -1,0 +1,24 @@
+<!--
+ This project is created by Loyi for demo purpose.
+ Last Updated: 2018/11/08
+ -->
+
+<template name="sessionDemo">
+  <!-- 示範 Session Variable 的 template -->
+  <div id="sessionBlock">
+    <!-- 為了讓它可以隨我們操控顯示/消失，我們另外做一個區域標記，再從 CSS 操控它出現/消失 -->
+    {{> mySessionExample}}
+  </div>
+</template>
+
+<template name="mySessionExample">
+  <!-- Session Variable 範例主體 -->
+  <center>  <!-- 新的 HTML5 其實已經不能用 center 這個 HTML tag，但是 TY 常用，我們姑且用之 -->
+    <h1>Say hello to you!</h1>
+    <p>{{helloMessage}}</p> <!-- 請 helper 給出這裡的訊息 -->
+    <form>
+      <input type="text" id="name" placeholder="Please tell me your name!">
+      <input type="button" id="enterName" value="Enter">
+    </form>
+  </center>
+</template>

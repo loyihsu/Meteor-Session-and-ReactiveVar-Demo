@@ -1,0 +1,24 @@
+<!--
+ This project is created by Loyi for demo purpose.
+ Last Updated: 2018/11/08
+ -->
+
+<template name="reactiveVar">
+  <!-- 示範 Reactive Variable 的 template -->
+    <div id="reactiveVarBlock">
+      <!-- 為了讓它可以隨我們操控顯示/消失，我們另外做一個區域標記，再從 CSS 操控它出現/消失 -->
+      {{> myReactiveVarExample}}
+    </div>
+</template>
+
+<template name="myReactiveVarExample">
+  <!-- Reactive Variable 範例主體 -->
+  <center> <!-- 新的 HTML5 其實已經不能用 center 這個 HTML tag，但是 TY 常用，我們姑且用之 -->
+    <h1>Fruit Grandma's Farm</h1>
+    {{{getContent}}}    <!-- 三層大括號是含有 HTML tag 的 helper -->
+    <br>
+    <!-- Controls-->
+    <input type = "button" id = "prev" class = "buttons" value = "Prev" />
+    <input type = "button" id = "next" class = "buttons" value = "Next" />
+  </center>
+</template>

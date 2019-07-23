@@ -1,0 +1,30 @@
+/*
+ This project is created by Loyi for demo purpose.
+ Last Updated: 2018/11/08
+ */
+
+body {
+  /* 在 body 內的外觀 */
+  padding: 10px;  /* 邊緣填充 10 pixels */
+  font-family: sans-serif;  /* 字體選用非襯線字體 */
+}
+
+.navMenu {
+  /* navMenu 區域範圍內的外觀 */
+  text-align: center; /* 字體全部置中 */
+}
+
+a {
+  /* 超連結外觀設計 */
+  color: black; /* 將色彩設定成黑色（預設藍色） */
+  text-decoration: none;  /* 將外觀裝飾（預設底線）取消掉 */
+}
+
+#homeBlock {
+  /* 控制 homeBlock 這個 div 的顯示/消失*/
+  display: block;
+  /*
+    display: block; -> 顯示
+    display: none;  -> 消失
+  */
+}

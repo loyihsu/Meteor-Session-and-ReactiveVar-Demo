@@ -1,0 +1,40 @@
+<!--
+ This project is created by Loyi for demo purpose.
+ Last Updated: 2018/11/08
+ -->
+
+<head>
+  <!-- 這是 Web App 的標題 -->
+  <title>Demo Project</title>
+</head>
+
+<body>
+  <!-- 在這邊插入兩個 Template, navigationMenu 跟 contentViews -->
+  {{> navigationMenu}}
+  {{> contentViews}}
+</body>
+
+<template name="navigationMenu">
+  <!-- 管理 navigationMenu 的 template-->
+  <div class="navMenu">
+    <!-- navMenu 的區域標記 -->
+    {{{menu}}}  <!-- 三層大括號是含有 HTML tag 的 helper -->
+  </div>
+</template>
+
+<template name="frontPage">
+  <!-- 預設主頁的 template -->
+  <div id="homeBlock">
+    <!-- 為了讓它可以隨我們操控顯示/消失，我們另外做一個區域標記，再從 CSS 操控它出現/消失 -->
+    <h1>Hello! This is our Demo Project</h1>
+    <p>This project is a demo space for different topics. You can use the navigation menu to navigate this project.</p>
+  </div>
+</template>
+
+<template name="contentViews">
+  <!-- 內容顯示用的模組 -->
+  <!-- 將內容個模組插入在這個地方 -->
+  {{> frontPage}}   <!-- 主頁的 template -->
+  {{> sessionDemo}} <!-- 示範 Session 的 template-->
+  {{> reactiveVar}} <!-- 示範 reactiveVar 的 template -->
+</template>
